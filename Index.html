@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MPJ Supply</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<canvas id="bg"></canvas>
+
+<nav>
+    <div class="logo">MPJ SUPPLY</div>
+    <div onclick="toggleCart()">CART</div>
+</nav>
+
+<div class="cart" id="cart">
+    <h3>Cart</h3>
+    <div id="cartItems" style="margin-top:15px;opacity:0.7;"></div>
+</div>
+
+<section class="hero">
+    <h1>MPJ</h1>
+    <p>stay brined</p>
+</section>
+
+<section class="grid">
+
+<!-- ITEM 01 -->
+<div class="card" data-name="Item 01">
+    <div class="tag">LIMITED</div>
+    <a href="https://www.ebay.com/itm/318032177576" target="_blank">
+        <img class="first" src="https://i.ebayimg.com/images/g/6mIAAOSwV1ZjX6FY/s-l1600.jpg">
+        <img class="second" src="https://i.ebayimg.com/images/g/6mIAAOSwV1ZjX6FY/s-l1600.jpg">
+    </a>
+    <div class="overlay">
+        <div class="price">$29.99</div>
+        <div class="availability">Limited Stock</div>
+        <div class="title">ITEM 01</div>
+        <div class="add" onclick="addToCart(event,'Item 01')">ADD</div>
+    </div>
+</div>
+
+<!-- ITEM 02 -->
+<div class="card" data-name="Item 02">
+    <div class="tag">LIMITED</div>
+    <a href="https://www.ebay.com/itm/317818805275" target="_blank">
+        <img class="first" src="https://i.ebayimg.com/images/g/a4QAAOSwgdNpe9Jt/s-l1600.jpg">
+        <img class="second" src="https://i.ebayimg.com/images/g/a4QAAOSwgdNpe9Jt/s-l1600.jpg">
+    </a>
+    <div class="overlay">
+        <div class="price">$34.50</div>
+        <div class="availability">Limited Stock</div>
+        <div class="title">ITEM 02</div>
+        <div class="add" onclick="addToCart(event,'Item 02')">ADD</div>
+    </div>
+</div>
+
+<!-- ITEM 03 -->
+<div class="card" data-name="Item 03">
+    <div class="tag">LIMITED</div>
+    <a href="https://www.ebay.com/itm/317815923757" target="_blank">
+        <img class="first" src="https://i.ebayimg.com/images/g/pxEAAOSw-Pppeu5H/s-l1600.jpg">
+        <img class="second" src="https://i.ebayimg.com/images/g/pxEAAOSw-Pppeu5H/s-l1600.jpg">
+    </a>
+    <div class="overlay">
+        <div class="price">$22.75</div>
+        <div class="availability">In Stock</div>
+        <div class="title">ITEM 03</div>
+        <div class="add" onclick="addToCart(event,'Item 03')">ADD</div>
+    </div>
+</div>
+
+</section>
+
+<footer>MPJ SUPPLY — 2026</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
